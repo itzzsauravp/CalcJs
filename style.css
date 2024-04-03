@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#main-container {
+    margin: 5% auto 0% auto;
+    width: 550px;
+    height: 20px;
+}
+
+#calculator-container {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    border: 2px solid white;
+}
+
+/* Display Area */
+.display-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#input-area {
+    margin: 30px 20px;
+    height: 200px;
+    width: 100%;
+    font-size: 50px;
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+    padding: 150px 0px 20px 20px;
+}
+
+/* More Controls area */
+.more-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.for-more-btn {
+    padding: 10px;
+    font-size: 1.5rem ;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.for-more-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+i {
+    padding: 10px;
+    font-size: 1.5rem ;
+    border: none;
+    background-color: black;
+    color: white;
+    margin: 0px 10px;
+}
+
+i:hover {
+    background-color: white;
+    color: black;  
+}
+
+.more-controls-left {
+    margin-left: 20px;
+}
+
+.more-controls-right {
+    margin-right: 20px;
+}
+
+hr {
+    margin-bottom: 10px;
+}
+
+#history, #change-scale, #more{
+    margin: 0px 5px;
+}
+
+/* Buttons */
+
+.calculator-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.for-calc-btn {
+    flex: 1;
+    padding: 50px;
+    font-size: 1.5rem;
+    border: none;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    margin: 1% 1%;
+    /* Looks good to me twithout this 50% things also */
+    /* border-radius: 50%; */ 
+}
+
+.num-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.param-btn, .mod-btn, .div-btn, .mul-btn, .diff-btn, .add-btn{
+    color: green;
+}
+.param-btn:hover, .mod-btn:hover, .div-btn:hover, .mul-btn:hover, .diff-btn:hover, .add-btn:hover{
+    background-color: white;
+    color: green;
+}
+
+.clear-btn{
+    color: red;
+}
+.clear-btn:hover{
+    background-color: white;
+    color: red;
+}
+
+.eql-btn {
+    background-color: green;
+}
+.eql-btn:hover {
+    background-color: white;
+    color: green;
+}
+
+/* i have no idea how to deal with this at the moment */
+#hidden-lable {
+    display: none;
+}
